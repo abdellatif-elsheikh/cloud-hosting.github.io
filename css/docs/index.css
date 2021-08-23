@@ -1,0 +1,44 @@
+.head {
+  padding: 110px 0 40px;
+}
+
+.head__image {
+  text-align: end;
+}
+
+.head__image img {
+  width: 200px;
+}
+
+.main h3 {
+  margin: 20px 0;
+}
+
+.main .grid-md {
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main nav li {
+  font-size: 17px;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+
+.main nav li a {
+  -webkit-transition: color .2s ease-in;
+  transition: color .2s ease-in;
+}
+
+.main nav li a:hover {
+  font-weight: bold;
+}
+
+.main nav li .active {
+  color: #047aed;
+}
+/*# sourceMappingURL=index.css.map */

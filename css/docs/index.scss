@@ -1,0 +1,42 @@
+@import "../shared/variables";
+
+// Head
+.head {
+    padding: 110px 0 40px;
+    &__image{
+        text-align: end;
+        img{
+            width: 200px;
+        }
+    }
+}
+
+// Main
+.main {
+    h3{
+        margin: 20px 0;
+    }
+    .grid-md{
+        grid-template-columns: 1fr 2fr;
+        align-items: flex-start;
+    }
+
+    nav{
+        li{
+            font-size: 17px;
+            margin-bottom: 5px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #fff;
+
+            a{
+                transition: color .2s ease-in;
+                &:hover{
+                    font-weight: bold;
+                }
+            }
+            .active{
+                color: $bgBlue;
+            }
+        }
+    }
+}

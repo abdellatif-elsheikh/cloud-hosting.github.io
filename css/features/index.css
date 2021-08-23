@@ -1,0 +1,36 @@
+.head {
+  padding: 110px 0 40px;
+}
+
+.head__image {
+  text-align: end;
+}
+
+.head__image img {
+  width: 200px;
+}
+
+.sub-head__image {
+  text-align: end;
+}
+
+.sub-head__image img {
+  width: 300px;
+}
+
+.main .grid-md .card i {
+  margin-right: 15px;
+}
+
+.main .grid-md :nth-child(1) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/ span 3;
+}
+
+.main .grid-md :nth-child(2) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/ span 2;
+}
+/*# sourceMappingURL=index.css.map */

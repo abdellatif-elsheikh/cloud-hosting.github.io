@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/shared/index.css">
+    <link rel="stylesheet" href="css/home/index.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Elsheikg | Cloud Hosting</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar bg-primary text-white">
+        <div class="container flex" id="navContainer">
+            <h2><a class="text-white" href="/"> Elsheikh </a></h2>
+            <!-- Start hamburger menue -->
+            <div class="ham-menu">
+                <i class="fas fa-bars fa-2x"></i>
+                <i class="fas fa-times fa-2x d-none"></i>
+            </div>
+            <!-- end hamburger menue -->
+            <nav id="navbarLinks">
+                <ul class="nav-list flex">
+                    <li class="list-item">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="features.html">features</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="docs.html">docs</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Showcase -->
+    <section class="showcase bg-primary text-white py-4">
+        <div class="container grid-md">
+            <div class="showcase__text animation-left">
+                <h1>Easier Deployment</h1>
+                <p>
+                    Deploy web apps of all kinds, from large scale enterprise APIs to static websites for individuals.
+                    Fill out the form to try a demo of our platform
+                </p>
+                <a href="features.html" class="btn btn-outline">Read More</a>
+            </div>
+
+            <div class="showcase__form card animation-right">
+                <h2>Request a Demo</h2>
+                <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="contact">
+                    <p class="hidden">
+                        <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                    </p>
+                    <div class="form-control">
+                        <input type="text" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="company" placeholder="Company Name" required>
+                    </div>
+                    <div class="form-control">
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <input type="submit" value="send" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="container">
+            <h3 class="stats__heading text-center my-1 animation-left">
+                Welcome to the best platform for buikding applications of all types with modern architecture and scaling
+            </h3>
+
+            <div class="grid-md grid-md-3 text-center my-4">
+                <div class="animation-right">
+                    <i class="fas fa-server fa-3x"></i>
+                    <h3>12,450,620</h3>
+                    <p class="text-secondary">Deployment</p>
+                </div>
+                <div class="animation-left">
+                    <i class="fas fa-upload fa-3x"></i>
+                    <h3>1051 TB</h3>
+                    <p class="text-secondary">Published</p>
+                </div>
+                <div class="animation-right">
+                    <i class="fas fa-project-diagram fa-3x"></i>
+                    <h3>1,980,754</h3>
+                    <p class="text-secondary">Projects</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- cli -->
+    <section class="cli">
+        <div class="container grid-md grid-md-3">
+            <img src="images/cli.png" alt="" class="animation-left">
+            <div class="card animation-right">
+                <h3>Easy to use, cross platform CLI</h3>
+            </div>
+            <div class="card animation-left">
+                <h3>Deploy in seconds</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cloud -->
+    <section class="cloud bg-primary text-white py-1">
+        <div class="container grid-md">
+            <div class="text-center animation-left">
+                <h2 class="lg">Extreme Cloud Hosting</h2>
+                <p class="lead my-1">Cloud hosting like you've never seen. Fast, efficient and scalable</p>
+                <a href="features.html" class="btn btn-dark">Read More</a>
+            </div>
+            <div class="img-container animation-right">
+                <img src="images/cloud.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages -->
+    <section class="languages">
+        <h2 class="md text-center my-2">
+            Supported Languages
+        </h2>
+        <div class="container flex text-center">
+            <div class="card animation-top">
+                <h4>Node.js</h4>
+                <img src="images/logos/node.png" alt="">
+            </div>
+            <div class="card animate-bottom">
+                <h4>Python</h4>
+                <img src="images/logos/python.png" alt="">
+            </div>
+            <div class="card animation-top">
+                <h4>c#</h4>
+                <img src="images/logos/csharp.png" alt="">
+            </div>
+            <div class="card animate-bottom">
+                <h4>Ruby</h4>
+                <img src="images/logos/ruby.png" alt="">
+            </div>
+            <div class="card animation-top">
+                <h4>PHP</h4>
+                <img src="images/logos/php.png" alt="">
+            </div>
+            <div class="card animate-bottom">
+                <h4>Scala</h4>
+                <img src="images/logos/scala.png" alt="">
+            </div>
+            <div class="card animation-top">
+                <h4>clojure</h4>
+                <img src="images/logos/clojure.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5 text-white">
+        <div class="container grid-md grid-md-3">
+            <div class="copyright">
+                <h2 class="md">Elsheikh</h2>
+                <p>Copyright &copy; 2021</p>
+            </div>
+            <div class="links">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="Features.html">Features</a>
+                    </li>
+                    <li>
+                        <a href="Docs.html">Docs</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social-icons flex">
+                <a href="#" class="github">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+                <a href="#" class="facebook">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="#" class="instagram">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a href="#" class="twitter">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

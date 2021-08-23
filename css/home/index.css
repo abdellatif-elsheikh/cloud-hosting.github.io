@@ -1,0 +1,120 @@
+.showcase {
+  height: auto;
+  position: relative;
+  overflow: visible;
+}
+
+.showcase::before {
+  content: '';
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  left: 0;
+  right: 0;
+  background-color: white;
+  -webkit-transform: skewy(-3deg);
+          transform: skewy(-3deg);
+}
+
+.showcase .grid-md {
+  -ms-grid-columns: 55% 45%;
+      grid-template-columns: 55% 45%;
+  gap: 30px;
+}
+
+.showcase h1 {
+  font-size: 40px;
+}
+
+.showcase p {
+  margin: 20px 0;
+}
+
+.showcase__form {
+  position: relative;
+  top: 60px;
+  height: 350px;
+  padding: 40px;
+  z-index: 0;
+}
+
+.showcase__form .form-control {
+  margin: 30px 0;
+}
+
+.showcase__form .form-control input[type="text"],
+.showcase__form .form-control input[type='email'] {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
+
+.stats {
+  padding-top: 100px;
+}
+
+.stats__heading {
+  max-width: 500px;
+  margin: auto;
+}
+
+.stats .grid-md h3 {
+  font-size: 35px;
+}
+
+.stats .grid-md p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.cli .grid-md {
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
+.cli .grid-md > :first-child {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/span 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/span 2;
+}
+
+.cloud .grid-md {
+  -ms-grid-columns: 4fr 3fr;
+      grid-template-columns: 4fr 3fr;
+  grid-auto-flow: dense;
+}
+
+.languages {
+  padding-bottom: 40px;
+}
+
+.languages .flex {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.languages .card {
+  margin: 18px 10px 40px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform .25s ease-in-out;
+  transition: -webkit-transform .25s ease-in-out;
+  transition: transform .25s ease-in-out;
+  transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
+}
+
+.languages .card:hover {
+  -webkit-transform: translatey(-10px);
+          transform: translatey(-10px);
+}
+
+.languages .card h4 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=index.css.map */

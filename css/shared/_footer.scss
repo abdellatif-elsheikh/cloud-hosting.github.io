@@ -1,0 +1,38 @@
+.footer {
+
+    li{
+        a{
+            color: $textWhite
+        }
+    }
+
+    .social-icons{
+        a{
+            color: $textWhite;
+            padding: 0 5px;
+            margin: 0 5px;
+            transition: color .2s ease
+        }
+        .github{
+            &:hover {
+                color: #212121
+            }
+        }
+        .facebook{
+            &:hover{
+                color: #4267B2;
+            }
+        }
+        .instagram{
+            &:hover{
+                color: #C13584;
+            }
+        }
+        .twitter{
+            &:hover{
+                color: #1DA1F2
+                ;
+            }
+        }
+    }
+}

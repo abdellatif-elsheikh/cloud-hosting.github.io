@@ -1,0 +1,40 @@
+@import "../shared/variables";
+
+// Head
+.head {
+    padding: 110px 0 40px;
+    &__image{
+        text-align: end;
+        img{
+            width: 200px;
+        }
+    }
+}
+
+// Sub head
+.sub-head{
+    &__image{
+        text-align: end;
+        img{
+            width: 300px;
+        }
+    }
+}
+
+// Main
+.main{
+    .grid-md{
+
+        .card {
+            i{
+                margin-right: 15px;
+            }
+        }
+        & :nth-child(1){
+            grid-column: 1/ span 3;
+        }
+        & :nth-child(2){
+            grid-column: 1/ span 2;
+        }
+    }
+}

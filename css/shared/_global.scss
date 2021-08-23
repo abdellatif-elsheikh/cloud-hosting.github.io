@@ -1,0 +1,298 @@
+// Start resets
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    color: $mainColor;
+    line-height: 1.6;
+    overflow-x: hidden;
+
+    ::selection{
+        color: #fdfd98;
+        background-color: #0a0a38;
+    }
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $mainColor;
+}
+
+h1,
+h2 {
+    font-weight: 300;
+    margin: 10px 0;
+    line-height: 1.2;
+}
+
+p{
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+code, pre {
+    background-color: $mainColor;
+    color: $textWhite;
+    padding: 10px
+}
+
+// End Resets
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    flex-direction: column !important;
+}
+
+.card {
+    background-color: $textWhite;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: .27);
+    padding: 20px;
+    margin: 10px;
+    color: $mainColor
+}
+
+
+
+.bg-primary {
+    background-color: $bgBlue;
+    color: $textWhite;
+}
+
+.bg-dark {
+    background-color: $darkBlue;
+    color: $textWhite;
+}
+
+.bg-light{
+    background-color: $bgLight;
+    color: #333
+}
+
+.btn {
+    display: inline-block;
+    outline: none;
+    padding: 10px 30px;
+    color: $textWhite;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform .2s ease;
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+
+.btn-primary {
+    background-color: $bgBlue;
+    color: $textWhite;
+}
+
+.btn-dark {
+    background-color: $darkBlue;
+    color: $textWhite;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid #cdcdcd
+}
+
+.text-white {
+    color: $textWhite
+}
+
+.text-center {
+    text-align: center;
+}
+
+.alert {
+    background-color: $bgLight;
+    padding: 10px 20px;
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+.alert i {
+    margin-right: 15px;
+}
+
+.alert-success {
+    background-color: $sucsessColor;
+    color: $textWhite;
+}
+.alert-danger {
+    background-color: $dangerColor;
+    color: $textWhite;
+}
+
+.hidden{
+    visibility: hidden;
+    height: 0;
+}
+
+// -------Start margin
+.m-1 {
+    margin: 1rem;
+}
+.m-2 {
+    margin: 1.5rem;
+}
+.m-3 {
+    margin: 2rem;
+}
+.m-4 {
+    margin: 3rem;
+}
+.m-5 {
+    margin: 4rem;
+}
+
+.my-1 {
+    margin: 1rem 0;
+}
+.my-2 {
+    margin: 1.5rem 0;
+}
+.my-3 {
+    margin: 2rem 0;
+}
+.my-4 {
+    margin: 3rem 0;
+}
+.my-5 {
+    margin: 4rem 0;
+}
+
+.mx-1 {
+    margin: 0 1rem;
+}
+.mx-2 {
+    margin: 0 1.5rem;
+}
+.mx-3 {
+    margin: 0 2rem;
+}
+.mx-4 {
+    margin: 0 3rem;
+}
+.mx-5 {
+    margin: 0 4rem;
+}
+
+// padding
+.p-1 {
+    padding: 1rem;
+}
+.p-2 {
+    padding: 1.5rem;
+}
+.p-3 {
+    padding: 2rem;
+}
+.p-4 {
+    padding: 3rem;
+}
+.p-5 {
+    padding: 4rem;
+}
+
+.py-1 {
+    padding: 1rem 0;
+}
+.py-2 {
+    padding: 1.5rem 0;
+}
+.py-3 {
+    padding: 2rem 0;
+}
+.py-4 {
+    padding: 3rem 0;
+}
+.py-5 {
+    padding: 4rem 0;
+}
+
+.px-1 {
+    padding: 0 1rem;
+}
+.px-2 {
+    padding: 0 1.5rem;
+}
+.px-3 {
+    padding: 0 2rem;
+}
+.px-4 {
+    padding: 0 3rem;
+}
+.px-5 {
+    padding: 0 4rem;
+}
+
+// ----------
+.xl{
+    font-size: 4rem;
+}
+
+.lg{
+    font-size: 3rem;
+}
+
+.md {
+    font-size: 2rem;
+}
+
+.sm {
+    font-size: 1rem;
+}
+
+.lead {
+    font-size: 1.25rem;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.d-block{
+    display: block !important;
+}
+
+@media (min-width: 770px){
+
+    .grid-md {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr );
+        gap: 20px;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .grid-md-3{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
