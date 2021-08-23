@@ -1,15 +1,24 @@
 .showcase {
   height: auto;
   position: relative;
-  overflow: visible;
 }
 
 .showcase::before {
-  content: '';
+  content: "";
+  position: absolute;
+  height: 70px;
+  bottom: -2px;
+  left: 0px;
+  right: 0;
+  background-color: white;
+}
+
+.showcase::after {
+  content: "";
   position: absolute;
   height: 100px;
-  bottom: -70px;
-  left: 0;
+  bottom: 0px;
+  left: 0px;
   right: 0;
   background-color: white;
   -webkit-transform: skewy(-3deg);
@@ -32,10 +41,9 @@
 
 .showcase__form {
   position: relative;
-  top: 60px;
   height: 350px;
   padding: 40px;
-  z-index: 0;
+  z-index: 10;
 }
 
 .showcase__form .form-control {
@@ -43,7 +51,7 @@
 }
 
 .showcase__form .form-control input[type="text"],
-.showcase__form .form-control input[type='email'] {
+.showcase__form .form-control input[type="email"] {
   outline: none;
   border: none;
   border-bottom: 1px solid #bdbdbd;
@@ -78,10 +86,10 @@
 .cli .grid-md > :first-child {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
-  grid-column: 1/span 2;
+  grid-column: 1 / span 2;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
-  grid-row: 1/span 2;
+  grid-row: 1 / span 2;
 }
 
 .cloud .grid-md {
@@ -102,10 +110,10 @@
 .languages .card {
   margin: 18px 10px 40px;
   cursor: pointer;
-  -webkit-transition: -webkit-transform .25s ease-in-out;
-  transition: -webkit-transform .25s ease-in-out;
-  transition: transform .25s ease-in-out;
-  transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
 }
 
 .languages .card:hover {

@@ -54,9 +54,11 @@ code, pre {
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 100%;
+  width: 1100px;
   margin: auto;
   padding: 0 30px;
+  overflow: hidden;
 }
 
 .flex {
@@ -362,11 +364,12 @@ code, pre {
   .showcase {
     height: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 30px;
   }
   .showcase__text {
     width: 80%;
     margin: auto;
+    margin-bottom: 20px;
   }
   .cli {
     padding-bottom: 40px;
