@@ -47,30 +47,14 @@ sr.reveal(".animation-top", {
     delay: 300
 });
 
-sr.reveal('.animate-bottom', {
+sr.reveal('.animation-bottom', {
     origin: 'bottom',
     duration: 1000,
     distance: '25rem',
     delay: 600
 });
 
-// Nav scroll
-// body.onscroll = (e)=>{
-//     let x= body.getBoundingClientRect();
-//     console.log("h");
-//     if(x.top <= -50){
-//         navbar.classList.add("sticky-nav");
-//         navbar.style.transform = "translatey(49px)"
-//         navbar.style.transition = "transform .3s ease-in"
-//     }else{
-//         navbar.classList.remove("sticky-nav")
-//         navbar.style.transform = "translatey(0px)"
-//         navbar.style.transition = "transform 0s ease-in"
-
-//     }
-
-//     console.log(this.scrollHeight);
-// };
+// Scroll check
 
 var lastScrollTop = 0;
 var backToTop;
